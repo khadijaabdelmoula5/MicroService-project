@@ -1,0 +1,84 @@
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    background: linear-gradient(to right, #586b7f, #2bad6a);
+  }
+  
+  /* Title Styling */
+  .card-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .card-body h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Button Styling */
+  button {
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-outline-primary {
+    border: 2px solid #2bad6a;
+    color: #2bad6a;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #2bad6a;
+    color: #fff;
+  }
+  
+  /* Table Styling */
+  .table {
+    margin-top: 20px;
+  }
+  
+  thead th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  tbody tr {
+    background-color: #fff;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+  }
+  
+  td {
+    vertical-align: middle;
+  }
+  
+  /* Footer */
+  .card-footer {
+    font-size: 0.9rem;
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    button {
+      font-size: 0.9rem;
+    }
+  
+    .card-header h1 {
+      font-size: 1.5rem;
+    }
+  }
+  

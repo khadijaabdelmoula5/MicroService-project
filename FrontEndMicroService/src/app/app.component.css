@@ -1,0 +1,114 @@
+/* Container Styling */
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff; /* Couleur blanche nette */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+}
+
+/* Title Styling */
+.title {
+  color: #004085; /* Bleu professionnel */
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #004085; /* Bleu profond */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: #ffffff; /* Blanc pur */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #e2e6ea; /* Gris clair */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #ffc107; /* Jaune doré */
+}
+
+/* Table Container Styling */
+.table-container {
+  margin-bottom: 40px;
+  overflow-x: auto;
+}
+
+/* Table Styling */
+.student-table, .address-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #dee2e6;
+}
+
+th {
+  background-color: #f8f9fa; /* Gris clair */
+  color: #495057; /* Gris sombre */
+  font-weight: bold;
+}
+
+td {
+  background-color: #ffffff; /* Blanc pur */
+  color: #212529; /* Noir doux */
+}
+
+tr:hover {
+  background-color: #f1f3f5; /* Gris très clair */
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .student-table, .address-table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Buttons */
+button {
+  background-color: #004085; /* Bleu profond */
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #002752; /* Bleu encore plus foncé */
+}
+
+/* Shadows and Borders */
+.box-shadow {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.border-radius {
+  border-radius: 10px;
+}

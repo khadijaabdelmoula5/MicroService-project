@@ -1,0 +1,37 @@
+<div class="add-address-container">
+    <h2>Add Address</h2>
+    <form (ngSubmit)="onSubmit()" #addressForm="ngForm">
+      <div class="form-group">
+        <label for="street">Street:</label>
+        <input
+          type="text"
+          id="street"
+          name="street"
+          class="form-control"
+          [(ngModel)]="address.street"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          class="form-control"
+          [(ngModel)]="address.city"
+          required
+        />
+      </div>
+      <div class="d-flex justify-content-end mt-4 gap-2">
+        <button type="submit" class="btn btn-success" [disabled]="!addressForm.form.valid">
+          Add Address
+        </button>
+        <a routerLink="/addresses" class="btn btn-secondary">Back to Address</a>
+      </div>
+      
+    </form>
+    <p *ngIf="successMessage" class="success-message">{{ successMessage }}</p>
+    <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+  </div>
+  
